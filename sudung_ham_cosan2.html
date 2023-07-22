@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+</body>
+<script>
+  let input = prompt("Nhập dãy số:");
+  let array = input.split("");
+  for (let i = 1; i < array.length; i++) {
+    if (array[i]%2===0&&array[i-1]%2===0) {
+      array.splice(i,1,-1*array[i]);
+    }
+  }
+  console.log(array);
+  let newInput = array.join("");
+document.write(newInput);
+</script>
+</html>

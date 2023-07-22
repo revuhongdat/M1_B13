@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+</body>
+<script>
+  let input = prompt("Nhập mảng số nguyên cách nhau bởi dấu ',' :");
+  let int = input.split(",");
+  let count = 0;
+  for(let i = 0; i < int.length; i++) {
+      if (int[i] < 0) {
+          count += 1;
+      }
+  }
+  alert(`Số lượng phần tử là số nguyên âm trong mảng là ${count}`);
+</script>
+</html>

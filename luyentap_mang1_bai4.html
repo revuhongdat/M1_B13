@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+</body>
+<script>
+  let input = prompt("Nhập mảng số nguyên cách nhau bởi dấu ',' :");
+  let int = input.split(",");
+  let resever = [];
+  for (let i = int.length-1; i >= 0 ; i--) {
+    resever.push(int[i]);
+  }
+  document.write(`Mảng sau khi đảo chiều là: ${resever}.`)
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+</body>
+<script>
+  function chuyenDoiChuHoa(chuoi) {
+    let chuoiChuHoa = "";
+
+    for (let i = 0; i < chuoi.length; i++) {
+      let kyTu = chuoi[i];
+
+      if (kyTu >= 'a' && kyTu <= 'z') {
+        kyTu = kyTu.toUpperCase();
+      } else {
+        kyTu = kyTu.toLowerCase();
+      }
+      chuoiChuHoa += kyTu;
+    }
+    return chuoiChuHoa;
+  }
+  let chuoiNhap = prompt("Nhập vào một chuỗi:");
+
+  let chuoiChuHoa = chuyenDoiChuHoa(chuoiNhap);
+
+  // Hiển thị kết quả
+  console.log("Chuỗi chữ hoa: " + chuoiChuHoa);
+</script>
+</html>

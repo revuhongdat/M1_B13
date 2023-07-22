@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faking_Text</title>
+</head>
+<body>
+<div style="text-align: center">
+    <h1>Viết điều mà bạn suy nghĩ ra đây</h1>
+    <textarea onkeyup="typetext()" style="width: 50%;background-color: cyan" id="input" ></textarea>
+</div>
+</body>
+<script>
+    let base = ["T","ô","i"," ","t","h","ậ","t"," ","p","r","o","!"];
+    let convert = "";
+function typetext() {
+    input = document.getElementById('input').value;
+    for (let i = 0; i < input.length; i++) {
+        convert = convert + base[i];
+        if (i === base.length) {
+            document.getElementById('input').value = "";
+            convert = "";
+        }
+    }
+    document.getElementById("input").value= convert;
+    convert = "";
+}
+
+</script>
+</html>
