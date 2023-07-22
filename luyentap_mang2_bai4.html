@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+</body>
+<script>
+  let string = 'abcdncdasd324k3mf';
+  let count = 0;
+  for (let i = 0; i < string.length; i++) {
+    if(typeof(string[i]) !== "number" ) {
+      count += 1;
+    }
+  }
+  document.write(`Chuỗi có ${count} ký tự là chữ!`)
+</script>
+</html>

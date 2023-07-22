@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+</body>
+<script>
+    let arr = [0,1,2,2,4,5,6,7,8,9];
+    let input = +prompt("Nhập vào phần tử số nguyên V: ");
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === input) {
+            arr.splice(i,1);
+            arr.push(0);
+            console.log(arr);
+            i = 0 ;
+        }
+    }
+    document.write(arr);
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+</body>
+<script>
+    let arr = ['ab-','ad-','-','as'];
+    let X = [];
+    let newArr = [];
+    let Y;
+    for (let i = 0; i < arr.length; i++) {
+        X = arr[i].split("");
+        for (let j = 0; j < X.length; j++) {
+            if (X[j] === '-') {
+                X[j] = "_";
+            }
+        }
+         newArr.push(X.join(""));
+    }
+    document.write(newArr);
+</script>
+</html>
